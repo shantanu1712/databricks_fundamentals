@@ -1,6 +1,18 @@
 3 Types
+Tables sits on the 3rd level of the Catalog.
 
 > Managed = All taken care by Databricks.Performance, Storage performance and unity compatibility.
+      Features: 
+              Predective Optimize: Based on the patter, databricks runs the optimize command on the tables. Enabled by default. 
+                                   If the property is enabled on the catalog it can be inherited to schemas and eventually to tables.
+                                   Alter Catalog catalog_name (enable | disabled | Inherit) predective optimization
+                                   Alter scehma|database catalog_name (enable | disabled | Inherit) predective optimization
+                                   Disadvantage : Not available in all regions. default retention of vaccum of 7 days
+
+              Liquid Clustering : 
+                                      
+              
+              
 > External = Supports Unity. Performance and storage comes with manual efforts.
       Create external table tablename(
             columname datatype
