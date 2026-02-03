@@ -1,1 +1,10 @@
+3 Types
+
+> Managed = All taken care by Databricks.Performance, Storage performance and unity compatibility.
+> External = Supports Unity. Performance and storage comes with manual efforts.
+      Create external table tablename(
+            columname datatype
+           )
+      Location path
+> Foregin = No unity support. Only read operation can be performed. 
 
